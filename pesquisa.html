@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+     <title>teste</title>
+     <meta charset="UTF=8"/>
+
+    <script>
+                    // Obtenha uma referência para o elemento checkbox
+            var checkbox = document.getElementById('meuCheckbox');
+
+            // Adicione um evento de escuta para capturar alterações no estado do checkbox
+            checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                // Checkbox está marcado
+                console.log("Checkbox marcado");
+            } else {
+                // Checkbox está desmarcado
+                console.log("Checkbox desmarcado");
+            }
+            });
+
+       
+    </script>
+</head>
+<body>
+    <label>
+        <input type="checkbox" id="meuCheckbox"> Meu Checkbox
+      </label>
+      
+</body>
+</html>
+<!-- function card(){
+
+            if (D.escolha.Checked)
+                texto = "brigadeiro";
+            alert("Sua  escolha é \n"+ texto);
+
+        }
+<form name="D">
+    <br/> 
+    <input type="checbox" name="escolha"> brigadeiro
+    <input type="checbox" name="DOCES"> brigadeiro
+    <input type="button" value="Comprar" onclick="card();">
+</form>-->

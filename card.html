@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <head style=>
+        <metacharset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="imsgens/icons8-cupcake-32 (2).png">
+        <title> Doces da Bia </title>
+        <link rel="stylesheet" href="img.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="index.html"/>
+
+        <style>
+            .cardapio {
+                text-decoration: none;
+                position: absolute;
+                flex-direction: center;
+                width: 10x;
+                height: 30px;
+
+            }
+
+            .cardapiobrigadeiro {
+                position: absolute;
+                flex-direction: center;
+                width: 10x;
+                height: 30px;
+            }
+
+            #imgp {
+                padding: 10px;
+                border: 50%;
+            }
+
+            #s {
+                font-size: 16px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: white;
+                border-radius: 15px;
+
+            }
+
+            .imgd {
+                width: 194px;
+                height: 195px;
+                
+            }
+
+            .imgdg {
+
+                width: 185px;
+            }
+
+            .place-card {
+                margin:     10px 20px 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+                border-radius: 8px;
+                background-color: #f0b4eea2;
+                max-width: 15rem;
+                gap: 1rem;
+                border: pink solid 2px;
+            }
+
+            .descricao {
+
+                text-align: justify;
+
+            }
+
+            .place-card-list {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            .place-card-especial{
+                margin:     10px 20px 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+                border-radius: 8px;
+                background-color: #e590eaa2;
+                max-width: 15rem;
+                gap: 1rem;
+                border: rgb(0, 208, 255) 5px solid;
+            
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+
+
+            }
+
+           /* .briga{
+                padding-top: 1px;
+                padding-left: 80px;
+            }*/
+            #whatsappButton{
+                background-color: rgb(255, 192, 241);
+                text-align: flex;
+                text-decoration: none;
+                border: 2px solid aqua;
+                border-radius: 5px;
+                font-size: 20px;
+                height: flex\;
+             
+            }
+            .che{
+                text-align:  right;
+
+            }
+        </style>
+        
+    
+    </head>
+
+<body>
+        <img id="imgpags" src="imsgens/card.png" alt=" Entregas" width="1365px" height="200PX">
+
+        <nav id="menu-h">
+            <ul>
+                <li id="Página"> <a href="index.html">Página Inicial</a></li>
+                <li id="Cliente"> <a href="client.html">Área do Cliente</a></li>
+                <li> <a href="card.html">Cardápio</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <div class="esq">
+                    <input type="text" class="barra" placeholder="Search...">
+                    <a href="#" class="btn">
+                        <img id="lupa" src="imsgens/icons8-busca-pelo-amor-32.png" alt="lupa"></a></imput>
+                   <button id="pesquisa" type="submit" onclick=" pesquisar()" return false></button></a></li>-->
+                </div>
+            </ul>
+        </nav>
+
+
+        <div class="bordasL">
+            <h2 style="font-size: 25px; text-align: center; background-color: pink; top:0px;"> Confira o menu </h2>
+
+            <form action="" id="che" name="D">
+              <div class="place-card-list">
+         
+                    <div class="place-card-especial">
+               
+                                <input type="checkbox" name="opcao" value="Especial de junho!!!"> Especial de junho!!! <br>
+                                <p style="Color: rgb(255, 255, 255)">Caixinha da felicidade</p>
+                                <img src="imsgens/especialdejunho.jpg" alt="imagemdoce" class="imgdg">
+                                <div class="descricao">
+                                    <p style="font-size: 20px; text-align: center; background-color: aliceblue;">Sabores dos brigadeiros:<br /> </p>
+                                    <p id="s">Paçoca;<br />.Milho verde;<br />.Amendoin;<br /></p> <br/>
+                                    <p style="background-color: aliceblue; border-radius: 5px;">Valor unitário R$4,00</p>
+                                </div>
+                            </div>
+                                        
+                    <div class="place-card">
+                            <input type="checkbox" name="opcao" value="Brigadeiro Tradicional"> Brigadeiro Tradicional <br/>
+                            <img src="imsgens/bricadeiros.jpeg" alt="imagemdoce" class="imgd">
+                            <div class="descricao">
+                                <p style="font-size: 20px;">Sabores:<br /> </p>
+                                <p id="s">.Chocolate ao leite ;<br />.Beijinho;<br />.Bixo de pé;<br /></p> <br />
+                                <p style="background-color: aliceblue; border-radius: 5px;">Valor unitário R$2,00</p>
+                            </div>
+                            </div>
+                    
+                        
+                        <div class="place-card">
+                            <input type="checkbox" name="opcao" value=" Brigadeiro Goumert"> Brigadeiro Goumert<br>
+                            <img src="imsgens/brigadeiro-g.jpg" alt="imagemdoce" class="imgdg">
+                            <div class="descricao">
+                                    <p style="font-size: 20px;">Sabores:<br /> </p>
+                                    <p id="s">.Chocolate Amargo;<br />.Confete;<br />.Ninho;<br /></p> <br />
+                                    <p style="background-color: aliceblue; border-radius: 5px;">Valor unitário R$2,50</p>
+                            </div>      
+                        </div>
+
+                            <br/>
+
+                            <div class="place-card">
+                                <input type="checkbox" name="opcao" value="Cupcake"> Cupcake <br>
+                                <br>
+                            
+                                <img src="imsgens/cupckaque.jpg" alt="imagemdoce" class="imgdg">
+                                <div class="descricao">
+                                    <p style="font-size: 20px;">Sabores da Massa: </p>
+                                    <p id="s">.Chocolate;<br />.Baunilha;<br />.Paçoca;<br /></p> <br />
+                                    <br/>      <br/>
+                                    <p style="background-color: aliceblue; border-radius: 5px;">Valor unitário R$5,50</p>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="place-card">
+                                <input type="checkbox" name="opcao" value="Bombom Aberto (500ml)"> Bombom Aberto (500ml)<br>
+                                <br><br><br>
+                                <img src="imsgens/bombomabertodemorango.jpg" alt="imagemdoce" class="imgdg">
+                                <div class="descricao">
+                                    <p style="font-size: 20px;">Sabores:<br /> </p>
+                                    <p id="s">.Morango;<br />.Uva Verde;</p>
+                                        <br/>      <br/>      <br/>
+                            
+                                   <br/> <p style="background-color: aliceblue; border-radius: 5px;">Valor unitário R$16,50</p>
+                                </div>
+                            </div>
+
+                            <div class="place-card">
+                                <input type="checkbox" name="opcao" value="Banoffe"> Banoffe 
+                                <br> <br>
+                                <img src="imsgens/banoffe.jpg" alt="imagemdoce" class="imgdg">
+                                <div class="descricao">
+                                    <p style="font-size: 20px;">Ingredientes:<br /> </p>
+                                    <p id="s">.Farofa de Biscoito;<br/>.Doce de Leite;<br/>.Banana;<br/>.Brigadeiro Branco;<br/>.Chantily;<br/></p>
+                                    <br/>         
+                                    <p style="background-color: aliceblue; border-radius: 5px;">Valor unitário R$18,50</p>
+                                </div>
+                
+                            </div>
+                            <div class="place-card">
+                                <input type="checkbox" name="opcao" value="Alfajor" white:30px> Alfajor <br>
+                                <img src="imsgens/alfajor.jpg" alt="imagemdoce" class="imgdg">
+                                <div class="descricao">
+                                    <p style="font-size: 20px;">Sabores:<br /> </p>
+                                    <p id="s">.Chocolate Amargo;<br />.Confete;<br />.Ninho;<br /></p>
+                                     <br/>      <br/>        
+                                    <p style="background-color: aliceblue; border-radius: 5px;">Valor unitário R$4,00</p>
+                                </div>
+                            </div>
+                            <div class="place-card">
+                                <input type="checkbox" name="opcao" value="Alfajor"> Cone <br>
+                                <img src="imsgens/cone.jpg" alt="imagemdoce" class="imgdg">
+                                <div class="descricao">
+                                    <p style="font-size: 20px;">Sabores:<br /> </p>
+                                    <p id="s">.Chocolate Amargo;<br />.Confete;<br />.Ninho;<br /></p>
+                                     <br/>      <br/>        
+                                    <p style="background-color: aliceblue; border-radius: 5px;">Valor unitário R$4,00</p>
+                                </div>
+                            </div>
+
+
+                        </form>          
+             </div> 
+                     <button id="whatsappButton">
+                        <a href="https://api.whatsapp.com/send?phone=5522988724668text=Olá,%20gostaria%20de%20conversar%20sobre%20algum%20assunto." target="_blank">  Comprar 
+                        <img src="imsgens/icons8-carrinho-de-compras-58.png " href="comprar" input type="button" value="Comprar" onclick=" enviarWhatsApp() ;" /> </a>
+                    </button>
+                    <br/>
+
+            </div>
+            <script>
+                function enviarWhatsApp() {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+                var opcoesSelecionadas = [];
+                
+                checkboxes.forEach(function(checkbox) {
+                    opcoesSelecionadas.push(checkbox.value);
+                });
+                
+                var mensagem = "Olá, gostaria de pedir: " + opcoesSelecionadas.join(", ");
+                var numeroTelefone = "22988724668"; // Substitua pelo número de telefone correto
+                
+                var url = "https://api.whatsapp.com/send?phone=" + numeroTelefone + "&text=" + encodeURIComponent(mensagem);
+                window.open(url, "_blank");
+                }
+            </script>
+
+        <footer>
+            <img src="imsgens/fotopessoal.jpg" alt="" width="100px"  height="auto"  style="border: 5px solid plum; border-radius: 50%; float:left; background-color: antiquewhite;">
+
+            <div class="redes-sociais">
+            <a href="https://www.instagram.com/doces_da_bia19/" target="_blank">
+            <img src="imsgens/icons8-instagram-48.png" alt="Instagram">Instagram doces_da_bia19
+            </a><BR/>
+            <a href="https://api.whatsapp.com/send?phone=5522988724668" target="_blank">
+                <img src="imsgens/icons8-whatsapp-48.png" alt="WhatsApp">whatsapp dOCES DA BIA 
+            </a>
+            
+            </div>
+        </footer>
+
+
+</body>
+
+</html>

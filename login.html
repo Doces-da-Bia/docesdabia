@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Doces da Bia </title>
+    <link rel="shortcut icon" href="imsgens/icons8-cupcake-32 (2).png" type="image/x-icon"/>
+    <link rel="stylesheet" href="registro.html">
+    <style>
+       body{
+           /* background-color: turquoise;*/
+            background-image: linear-gradient( turquoise, pink);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container input::placeholder{
+          color: #dce1e3;
+        }
+
+       .contactForm{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 300px;
+            width: 300px;
+            border-radius: 51px;
+            background-color: linear-gradient(144deg , #9debf1, #d162bb);
+            box-shadow: 23px 23px 40px #dc42d6 ,
+                    -23px -23px 40px #ffff;   
+        }
+        .contentform{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            
+
+        }
+        .inputBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin:10px auto;
+            
+        }
+        .contactForm h3{
+            position: absolute;
+            top: 50px;
+            font-size: 20px;
+            letter-spacing: 5px;
+            transition: 0.7s;
+            color: white;
+
+        }
+        .contactForm h3{
+            font-size: 50px;
+            cursor: pointer;
+        }
+
+       .inputBox label{
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 2pxs;
+            color:#fb0eb0;
+
+       }
+
+       .inputBox input {
+            padding: 5px 30px;
+            border: 1px solid #fb0eb0;
+            outline: none;
+            transition: 0.5s;
+            border-radius: 25px;
+            background: transparent;
+        
+       }
+
+       .inputBox input:focus,
+       .inputBox input:valid{
+            color: #fff;
+            box-shadow: inset 300px 0 #9cdaf1;
+       }
+
+       .contentform button{
+            padding: 5px;
+            color:#ed0cbc;
+            bottom: 100px;
+            border-radius: 25px;
+            border: 5px solid #f27ee3;
+            background-color: transparent;
+            transition: 0.5s;
+            
+       }
+       .contentform button:hover{
+            transform: scale(100%);
+            background-color: #5cb2f0;
+            color: white;
+            cursor: pointer;
+            letter-spacing: 5px;
+       }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="index.html" class="contactForm">
+            <h3> Login</h3>
+            <div class="contentform">
+                <br/>
+                <div class="inputBox">
+                    <label for="name"> Email</label>
+                    <input type="text" placeholder="email"  id="name" required></imput>
+                </div>    
+                <div class="inputBox">
+                        <label for="Password"> Password </label>
+                        <input type="text" placeholder="Password" id="Password" required></imput>
+                </div>
+                <div>
+                <button type="submit" onclick="registro(); return false"> Cadastrar login</button>
+                <button type="submit" onclick="logar(); return false"> Entrar</button>
+               
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+        function logar(){
+
+            var login= document.getElementById('name').value;
+            var senha= document.getElementById('Password').value; 
+              
+            if(login=="adm"&& senha=="adm"){
+                alert('sucesso');
+                location.href="index.html";
+            }
+            else{
+                alert('usuário ou senh inválidos!');
+
+            }
+        }
+        function registro(){
+
+                location.href="registro.html";
+        }
+
+    </script>
+</body>
+</html>

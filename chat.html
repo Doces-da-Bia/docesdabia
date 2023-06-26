@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barra de Pesquisa</title>
+  <style>
+    #search-form {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    #search-input {
+      padding: 5px;
+      width: 300px;
+    }
+    
+    #search-button {
+      padding: 5px 10px;
+    }
+  </style>
+   <script>
+    function searchAndRedirect() {
+      var searchTerm = document.getElementById("search-select").value;
+      var selectElement = document.getElementById("search-select");
+      var selectedOption = selectElement.options[selectElement.selectedIndex];
+      var pageURL = selectedOption.getAttribute("href");
+      
+      if (pageURL) {
+        pageURL += "?q=" + encodeURIComponent(searchTerm);
+        window.location.href = pageURL;
+      } else {
+        alert("Opção inválida selecionada.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="search-form">
+  
+      
+    <select id="search-select">
+    
+      <option value="opcao1" href="card.html">Brigadeiro</option>
+      <option value="opcao2" href="card.html">bombom aberto</option>
+      <option value="opcao3" href="card.html">especial de junho</option>
+    </select>
+      
+    <button type="button" id="search-button" onclick="searchAndRedirect()">Pesquisar</button>
+  </div>
+</body>
+</html>

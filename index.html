@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width,initial-scale=1.0"/> 
+    <link rel="icon" href="imsgens/icons8-cupcake-32 (2).png">
+    <title>Doces da Bia</title>
+    <link rel="stylesheet" href="img.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="login.html">
+
+    <style>
+
+    .carousel {
+        display: flex;
+        overflow: hidden;
+       
+        }
+
+        .carousel img {
+            width: 350px;
+            height: auto;
+            border: 5px double rgb(0, 0, 0);
+            padding: 15px;
+        }
+        .doces{
+            display: flex;
+              overflow: hidden;
+
+        }
+        .doces img{
+
+            width: 350px;
+            height: auto;
+            border: 5px solid aqua;
+            border-radius: 50%;
+            padding: 15px;
+
+        }
+        #float{
+
+            width: 200px;
+        }
+        
+    </style>
+   
+</head>
+<body>
+    <div id="container">
+        <img id="imgprincipal" src="imsgens/pagina inicial.png" />
+
+         <nav id="menu-h">
+                <ul id="resultado">
+                    <li id="Página" data-url="index.html"> <a href="index.html">Página Inicial</a></li>
+                    <li id="Cliente" data-url="cliente.html"> <a href="client.html">Área do Cliente</a></li>
+                    <li> <a href="card.html">Cardápio</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+
+                    <div class="esq">
+                        <input type="text" id="searchInput" class="barra" placeholder="Search..."><a href="#" class="btn">
+                            <img id= "lupa" src="imsgens/icons8-busca-pelo-amor-32.png" alt="lupa"></a>
+
+                            <button  onclick=" pesquisar()"></button></a>
+                    </div>
+
+                </ul>
+         </nav>
+
+            <div class="bordasL">
+                
+                <h2 style="font-size: 25px; text-align: center; background-color: pink; top:0px;"> Bem-vindo à página! </h2>
+
+                
+                <p style="padding:50px; text-align: justify; padding-inline: flex; color: rgb(200, 89, 208); font-size: 20px;">
+                    Somos uma confeitaria artesanal apaixonada por adoçar a vida das pessoas. Aqui, 
+                    cada doce é cuidadosamente elaborado com ingredientes selecionados e muito amor, 
+                    para proporcionar uma experiência única e deliciosa.</p><br/>
+
+                
+
+
+                <p style="background-color: black ; font-size: larger; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; "> NOVIDADES!</p>
+           
+                 <div class="carousel">
+                    <img src="imsgens/novidades.jpg" alt="Imagem 1">
+                    <img src="imsgens/bombomabertodemorango.jpg" alt="Imagem 2">
+                    <img src="imsgens/banoffe.jpg" alt="Imagem 3">
+                  </div>
+                <br/>
+     
+                
+                    <p style="background-color: pink; border-radius: 50px;"> Confira alguns de nossos produtos abaixo:</p>
+                    <p style="padding:50px; text-align: justify; padding-inline: flex; color: rgb(200, 89, 208); font-size: 20px;">
+                        Explore nosso site e descubra o universo de sabores que a Confeitaria Doces
+                        da Bia tem a oferecer. Desde bolos decorados, cupcakes irresistíveis, doces finos até 
+                        opções veganas e sem glúten, temos uma variedade de produtos para todos os gostos e ocasiões especiais.</p><br/>
+                    <br/>
+                    <div class="doces">
+                      <img src="imsgens/bricadeiros.jpeg" alt="Imagem 1">
+                      <img src="imsgens/especialdejunho.jpg" alt="Imagem 2">
+                      <img src="imsgens/cupckaque.jpg" alt="Imagem 3">
+                    </div>
+
+                    <br/>  <br/>  <br/> 
+                    <br/>  <br/>  <br/> 
+                    <div>
+                        <p style="color: rgb(216, 112, 214); background-color: rgb(106, 217, 241);"> Confira todos os nossos produtos em: 
+                            <link ><a input href="card.html" style="background-color: rgb(245, 229, 232); border-radius: 15%; color:rgb(225, 98, 180)">
+                                Nosso Cardápio</a></p>
+                        </p>
+                    </div>
+                 
+
+
+
+
+
+                    <script>
+                      var carousel = document.querySelector('.carousel');
+                      var images = carousel.getElementsByTagName('img');
+                      var currentImageIndex = 0;
+                  
+                      function showNextImage() {
+                        images[currentImageIndex].style.display = 'none';
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        images[currentImageIndex].style.display = 'block';
+                      }
+                  
+                      setInterval(showNextImage, 3000);
+                    </script>
+                    
+
+                          
+    </div>
+
+    <footer>
+        <img src="imsgens/fotopessoal.jpg" alt="" width="100px"  height="auto"  style="border: 5px solid plum; border-radius: 50%; float:left; background-color: antiquewhite;">
+
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com/doces_da_bia19/" target="_blank">
+          <img src="imsgens/icons8-instagram-48.png" alt="Instagram">Instagram doces_da_bia19
+          </a><BR/>
+          <a href="https://api.whatsapp.com/send?phone=5522988724668" target="_blank">
+            <img src="imsgens/icons8-whatsapp-48.png" alt="WhatsApp">whatsapp dOCES DA BIA 
+          </a>
+        
+        </div>
+      </footer>
+</body>
+</html>
